@@ -35,8 +35,6 @@ public class Member {
 	private String provider;
 	// 用户头像
 	private String picture;
-	// 名片
-	private Integer card;
 	// 是否手机验证通过
 	private Integer isMobileAuthed;
 	// 是否邮箱验证通过
@@ -174,14 +172,6 @@ public class Member {
 
 	public void setPicture(String picture) {
 		this.picture = picture;
-	}
-
-	public Integer getCard() {
-		return card;
-	}
-
-	public void setCard(Integer card) {
-		this.card = card;
 	}
 
 	public Integer getIsMobileAuthed() {
