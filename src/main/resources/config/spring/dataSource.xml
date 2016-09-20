@@ -36,7 +36,7 @@
 
     <!-- mybatis.spring自动映射 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.cnblogs.lzrabbit"/>
+        <property name="basePackage" value="com"/>
     </bean>
 
     <aop:aspectj-autoproxy/>
