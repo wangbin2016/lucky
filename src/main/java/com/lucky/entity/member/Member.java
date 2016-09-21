@@ -214,4 +214,15 @@ public class Member {
 		this.isVirtualAccount = isVirtualAccount;
 	}
 
+	@Override
+	public String toString() {
+		return "Member [id=" + id + ", account=" + account + ", nickName=" + nickName + ", name=" + name + ", certType="
+				+ certType + ", certNo=" + certNo + ", password=" + password + ", email=" + email + ", mobile=" + mobile
+				+ ", status=" + status + ", registerDateTime=" + registerDateTime + ", lastLoginDateTime="
+				+ lastLoginDateTime + ", exprerience=" + exprerience + ", sourceId=" + sourceId + ", provider="
+				+ provider + ", picture=" + picture + ", isMobileAuthed=" + isMobileAuthed + ", isEmailAuthed="
+				+ isEmailAuthed + ", isVIP=" + isVIP + ", isCharge=" + isCharge + ", isVirtualAccount="
+				+ isVirtualAccount + "]";
+	}
+
 }
