@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>我的夺宝</title>
+<meta name="keywords" content="积分夺宝" />
+<meta name="description" content="彩乐乐积分夺宝" />
+
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"> <!--  允许全屏浏览-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--指定的iphone中safari顶端的状态条的样式；-->
+<meta name="format-detection" content="telephone=no"><!--告诉设备忽略将页面中的数字识别为电话号码；-->
+<meta http-equiv="Pragma" contect="no-cache">
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on">
+<link href="/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!--css document-->
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/uc.css" rel="stylesheet" type="text/css" />
+
+<!--js document-->
+<script src="http://m.cailele.com/js/jQuery/jquery.min.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/ui/dialogBase.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/ui/cll_dialog.js" type="text/javascript"></script>\
+<script src="http://m.cailele.com/js/tips.js" type="text/javascript"></script>
+<script src="/js/public.js" type="text/javascript"></script>
+<script src="/js/config.js" type="text/javascript"></script>
+<script src="/js/uc/index.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!--头部begin-->
+<header class="topnavbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.back()" class="nav-back nav-btn-back"><span class="icon-topbar icon-goback"></span></a>
+    </div>
+    <h2 class="nav-tit">我的夺宝</h2>
+    <div class="nav-wrap-right page_to_index">
+        <a href="../index.shtml">首页</a>
+    </div>
+</header>
+<!--头部end-->
+
+<!--用户begin-->
+<div class="user-info-wrap">
+	<div class="user-info-inner">
+        <div class="user-face"><img src=""></div>
+        <div class="user-massege-wrap">
+            <div class="user-name">
+                <h3 id="account"></h3>
+                <em>积分：<strong class="red" id="score">0</strong></em>
+            </div>
+            <div class="obtain"><a class="btn" href="convert.shtml">兑换积分</a></div>
+        </div>
+    </div>
+</div>
+<!--用户end-->
+
+<!--功能begin-->
+<div class="user-content-wrap">
+	<dl class="user-oper">
+        <dt><strong>参与记录</strong></dt>
+        <dd><a class="btn" href="mark.shtml">夺宝记录<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>
+        <!-- 暂不实现<dd><a href="javascript:;" class="btn">我的定制<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd> -->
+         <dt><strong>个人资金</strong></dt>
+         <dd><a href="/mobile/uc/wallet.php" class="btn">资金明细<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>
+         <dd><a href="/mobile/uc/score.php" class="btn">我的积分<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>
+		 <dd id="amountButton" style="display:none"><a href="/mobile/uc/chargePresent.php" class="btn">领彩金<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>  
+         <dt><strong>安全中心</strong></dt>
+         <dd><a href="/mobile/uc/safeCenter.php" class="btn">安全资料<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>
+         <dd><a class="btn" href="address.shtml">收货地址<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>
+         <dt><strong>意见反馈</strong></dt>
+         <dd><a href="/member/feedback.shtml" class="btn">意见反馈<i class="arrow"><s class="s1"></s><s class="s2"></s></i></a></dd>
+        </dl>
+</div>
+<!--功能end-->
+
+<!--#include virtual="/footer.shtml" -->
+
+</body>
+</html>

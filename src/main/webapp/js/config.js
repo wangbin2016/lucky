@@ -1,0 +1,32 @@
+var config = {
+	api:{"home":"/index.php",
+		"detail":"/termInfo.php",
+		"join":"/join.php",
+		"openDetail":"/openAwardDetail.php",
+		"joinRecord":"/joinRecord.php",
+		"termHistory":"/termHistory.php",
+		"scoreInfo":"/uc/scoreInfo.php",
+		"exchange":"/uc/exchange.php",
+		"history":"/uc/history.php",	
+		"address":"/uc/address.php",
+		"addressList":"/uc/addressList.php",
+		"termList":"/termList.php",
+		"upAddress":"/uc/upAddress.php",
+		"addAddress":"/uc/addAddress.php",
+		"scoreHistory":"/uc/scoreHistory.php",
+		"signInInfo":"/uc/signInInfo.php",
+		"signIn":"/uc/signIn.php",
+		"exchangeCount":"/uc/exchangeCount.php",
+		"memberDrawNums":"/uc/memberDrawNums.php"
+	},
+	memberPic:"http://img.cailele.com/img_new/luck/user-default-head.jpg",
+	productPic:"http://img.cailele.com/img_new/m/luck/nopic-square.jpg",
+	scoreBamount:2000,
+	type:{"apple":"苹果专区","cardCharge":"充值卡","pcMobile":"电脑手机","life":"生活日用","sall":"特惠专区","other":"其他商品"},
+	share:{"url":"http://m1.cailele.com/index.shtml",
+		   "image_url":"http://img.cailele.com/img_new/luck/promo.png",
+		   "title":"1块钱买到你想要的iPhone6s",
+		    "content":["太赞了！夺得这台全新iPhone6s，我才用了1元！你会比我少吗？快来试一下",
+	                   "隔壁老王大揭秘，如何拿1元钱可以干很多女人都喜欢干的事情......"]
+	       }
+};

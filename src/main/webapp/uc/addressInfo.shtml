@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>收货地址</title>
+<meta name="keywords" content="收货地址" />
+<meta name="description" content="彩乐乐彩票网,手机买彩票首选平台,提供福利彩票、体育彩票、高频彩票、竞彩、足彩的全面资讯,手机投注彩票来彩乐乐,这里是中奖福地！" />
+
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"> <!--  允许全屏浏览-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--指定的iphone中safari顶端的状态条的样式；-->
+<meta name="format-detection" content="telephone=no"><!--告诉设备忽略将页面中的数字识别为电话号码；-->
+<meta http-equiv="Pragma" contect="no-cache">
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on">
+<link href="/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!--css document-->
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/uc.css" rel="stylesheet" type="text/css" />
+
+<!--js document-->
+<script src="http://m.cailele.com/js/jQuery/jquery.min.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/ui/dialogBase.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/ui/cll_dialog.js" type="text/javascript"></script>
+<script src="/js/public.js" type="text/javascript"></script>
+<script src="/js/config.js" type="text/javascript"></script>
+<script src="/js/area.js" type="text/javascript" ></script>
+<script src="/js/uc/address.js" type="text/javascript" ></script>
+
+</head>
+
+<body>
+<br><!--头部begin-->
+<header class="topnavbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.back()" class="nav-back nav-btn-back"><span class="icon-topbar icon-goback"></span></a>
+    </div>
+    <h2 class="nav-tit">收货地址信息</h2>
+    <div class="nav-wrap-right page_to_index">
+        <!-- <a href="../index.shtml">首页</a> -->
+    </div>
+</header>
+<!--头部end-->
+
+<!--说明begin-->
+<div class="speak">
+	<div class="tit">送货地址：</div>
+    <div class="jiesi">通过积分购获得的商品，将会按照用户填写的地址信息寄出。请用户如实填写，并确认填写的信息无误。</div>
+</div>
+<!--说明begin-->
+
+<!--地址编辑begin-->
+<div class="user-edit-wrap">
+	<form id="subForm" >
+		<input type="hidden" id="addressId" name="address.id"/>
+		<ul class="ds">
+		
+	    	<li><label>收货人：</label><span class="cllinput"><input id="name" placeholder="收货人姓名" data="收货人" name="address.name" class="bank_ipt notNull" type="text" value=""><span style="color:red">*</span></span></li>
+	        <li><label>联系电话：</label><span class="cllinput"><input id="mobile" maxlength="20" placeholder="请输入您的联系电话" data="联系电话" name="address.telephone" class="bank_ipt notNull mobileText" type="tel" value=""><span style="color:red">*</span></span></li>
+	    	<li>
+	        	<label>省份：</label>
+	            <span class="selecter">
+	                <select name="address.province" id="s_province" class="sel notNull" data="省份">
+	                </select>
+	            </span>
+	        </li>
+	    	<li>
+	        	<label>城市：</label>
+	            <span class="selecter">
+	                <select name="address.city" id="s_city" class="sel notNull" data="城市">
+	                </select>
+	            </span>
+	        </li>
+	    	<li>
+	        	<label>地区：</label>
+	            <span class="selecter">
+	                <select name="address.area" id="s_area" class="sel notNull" data="城区">
+	                </select>
+	            </span>
+	        </li>
+	        <li><label>详细地址：</label><span class="cllinput"><input id="address" placeholder="请填写详细到门牌号" name="address.address"  class="bank_ipt notNull"  type="text" value="" data="详细地址"><span style="color:red">*</span></span></li>
+	        <li><label>邮编：</label><span class="cllinput"><input id="zipCode" placeholder="请填写邮政编码"  max="999999" name="address.zipCode" class="bank_ipt notNull " type="number" value="" data="邮编"><span style="color:red">*</span></span></li>
+	    </ul>
+	</form>
+</div>
+<!--地址编辑end-->
+
+<!--保存begin-->
+<!--保存begin-->
+<div class="refer"><span class="cllbtn"><a href="javascript:;"  id="saveBtn" class="default"><i></i><em>保存收货地址</em></a></span></div>
+<!--保存end-->
+<!--保存end-->
+
+</body>
+</html>

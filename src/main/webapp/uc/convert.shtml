@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>兑换积分</title>
+<meta name="keywords" content="兑换积分" />
+<meta name="description" content="彩乐乐彩票网,手机买彩票首选平台,提供福利彩票、体育彩票、高频彩票、竞彩、足彩的全面资讯,手机投注彩票来彩乐乐,这里是中奖福地！" />
+
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"> <!--  允许全屏浏览-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--指定的iphone中safari顶端的状态条的样式；-->
+<meta name="format-detection" content="telephone=no"><!--告诉设备忽略将页面中的数字识别为电话号码；-->
+<meta http-equiv="Pragma" contect="no-cache">
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on">
+<link href="/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!--css document-->
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/uc.css" rel="stylesheet" type="text/css" />
+
+<!--js document-->
+<script src="http://m.cailele.com/js/jQuery/jquery.min.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/ui/dialogBase.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/ui/cll_dialog.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/utils/StringUtil.js" type="text/javascript"></script>
+<script src="http://m.cailele.com/js/utils/cllinputUtil.js" type="text/javascript"></script>
+<script src="/js/public.js" type="text/javascript"></script>
+<script src="/js/config.js" type="text/javascript"></script>
+<script src="/js/uc/convert.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!--头部begin-->
+<header class="topnavbar">
+    <div class="nav-wrap-left">
+        <a href="javascript:history.back()" class="nav-back nav-btn-back"><span class="icon-topbar icon-goback"></span></a>
+    </div>
+    <h2 class="nav-tit">兑换积分</h2>
+    <div class="nav-wrap-right page_to_index">
+        <a href="../index.shtml">首页</a>
+    </div>
+</header>
+<!--头部end-->
+
+<!--收货地址begin-->
+<div class="raise-wrap">
+	<p class="integral">积分：<em id="scoreText"></em></p>
+	<p class="balance">余额：<em id="moneyText"></em>元<span class="guide-recharge" style="display:none">余额不足？<a href="http://m.cailele.com/mobile/uc/recharge.php">点我充值!</a></span></p>
+	<p class="sure">账户余额最高可兑换<em id="maxScoreText"></em>积分</p>
+</div>
+<!--收货地址end-->
+
+
+<div class="cash-wrap">
+	<ul>
+    	<li>
+            <div class="listview-head">
+                <span>请输入兑换金额 <span id="tips" style="color:red;display:none">每次最多可兑换10万元</span><!--<span id="gift" style="color:red;display:none">满20元兑换加送20% <a href="http://m.cailele.com/subject/exchangeScore/convert.shtml">立即查看</a></span>--></span>
+            </div>
+            <div class="pay-bettimes">
+            	<span class="widget_multiple"><span class="minus">-</span><span class="cllinput"><input type="number" value="1" max="100000" step="1" default="1"  min="1" id="useMoney"></span><span class="add">+</span></span>
+            </div>
+            <div class="cllcheckbox allchange" ><a class="" id="allChange" href="javascript:;"><i></i><em>余额全部兑换积分</em></a></div>
+        </li>
+        <li class="spending"><label>共可兑换：</label><em id="useScore">2000</em>积分<span id="giftScore" style="display:none"> ,活动赠送<em>0</em>积分</span></li>
+        <li class="change-oper">
+        	<span class="cllbtn" id="submitBtn"><a href="javascript:;" class="default"><i></i><em>立刻兑换</em></a></span>
+        </li>
+        <li class="readme"><p class="read">说明：积分以1:2000比例进行兑换，即1元可以兑换2000积分</p></li>
+    </ul>
+</div>
+
+<!--#include virtual="/footer.shtml" -->
+
+</body>
+</html>
